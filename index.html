@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>92-dars</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container py-4">
+
+    <form class="js-search-form d-flex" action="https://echo.htmlacademy.ru" method="POST">
+      <input class="title-input input-group w-25 mr-5" type="search" name="name" aria-label="title search">
+      <button class="go" type="submit">Natijalrani opke!</button>
+    </form>
+    <!-- <div class="alert alert-info position-fixed">Bu sayt test rejimida ishlayapti.</div> -->
+
+    <p>Topilgan natijalar: <span class="result-pages text-info font-weight-bold">0</span></p>
+
+
+    <ul class="movies-list d-flex flex-wrap row">
+
+
+    </ul>
+
+    <nav class="pagination-nav d-flex align-items-center" aria-label="Page navigation example">
+      <button class="previous-btn btn btn-info" type="button">Previous</button>
+      <ul class="pagination overflow-auto mt-4">
+
+      </ul>
+      <button class="next-btn btn btn-info" type="button">Next</button>
+    </nav>
+
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-movie-img" src="" alt="" width="300" height="200">
+
+          <p class="p-0 m-0">Rating:
+            <span class="modal-movie-rating"></span>
+          </p>
+
+          <p class="p-0 m-0">Box-Office:
+            <span class="modal-movie-salary"></span>
+          </p>
+
+          <p class="p-0 m-0">Director:
+            <span class="modal-movie-director"></span>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Template -->
+  <template class="template-list-item">
+    <li class="card col-2 mx-2 d-flex flex-column">
+      <img src="https://picsum.photos/150/100" alt="image" class="img-movies mt-2" width="150" height="100">
+      <h5 class="title-movie">Godzilla</h5>
+      <p class="year-movies">2007</p>
+      <button class="more-info-btn btn btn-block btn-info my-2 mt-auto" type="button" data-toggle="modal" data-target="#exampleModal">Batafsil</button>
+    </li>
+  </template>
+
+  <template class="pagination-template">
+
+    <li class="page-item page-item-middl">
+      <a class="page-link page-active-link text-dark" href="#,">1</a>
+    </li>
+
+
+  </template>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/movies-new.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
